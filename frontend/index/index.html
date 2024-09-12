@@ -3,20 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sustainable transport</title>
+    <title>EcoTransit</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
 </head>
 <body>
-    <header>
-        <nav>
-            <div class="logo"></div>
-            <ul>Home</ul>
-            <ul>Carbon Footprint Data</ul>
-            <ul>Public transport</ul>
-            <ul>Electric Vehicles</ul>
-            <ul>Sustainable Practices</ul>
+    <header class="bg-light">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <svg class="bi bi-lightning-charge" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M11.251.068a.5.5 0 0 1 .227.58L9.677 6.5H13a.5.5 0 0 1 .364.843l-8 8.5a.5.5 0 0 1-.842-.49L6.323 9.5H3a.5.5 0 0 1-.364-.843l8-8.5a.5.5 0 0 1 .615-.09z"/>
+                    </svg>
+                    EcoTransit
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Carbon Footprint Data</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Public Transport Benefits</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Electric Vehicles</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sustainable Practices</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
+
+    <main class="container my-4">
+        <section class="mb-4">
+            <h2 class="mb-3">Image Slider with Green Transportation Modes</h2>
+            <div class="slider-container bg-secondary rounded">
+                <img src="/api/placeholder/800/300" alt="Green transportation mode 1" class="slider-image active">
+                <img src="/api/placeholder/800/300" alt="Green transportation mode 2" class="slider-image">
+                <img src="/api/placeholder/800/300" alt="Green transportation mode 3" class="slider-image">
+            </div>
+        </section>
+
+        <div class="row">
+            <section class="col-md-6 mb-4">
+                <h2 class="mb-3">Eco-Routing Maps</h2>
+                <div class="card">
+                    <img src="/api/placeholder/400/200" alt="Eco-routing map" class="card-img-top">
+                    <div class="card-body">
+                        <p class="card-text">Discover the most eco-friendly routes to minimize your carbon footprint while traveling.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="col-md-6 mb-4">
+                <h2 class="mb-3">Sustainable Transport Options</h2>
+                <div class="card">
+                    <div class="row g-0 p-3">
+                        <div class="col-4">
+                            <img src="/api/placeholder/120/80" alt="Electric bicycles" class="img-fluid rounded">
+                        </div>
+                        <div class="col-4">
+                            <img src="/api/placeholder/120/80" alt="Zero-emission buses" class="img-fluid rounded">
+                        </div>
+                        <div class="col-4">
+                            <img src="/api/placeholder/120/80" alt="Solar-powered car charging stations" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="card-body">
+                        <p class="card-text">Explore various sustainable transport options such as electric bicycles, zero-emission buses, and solar-powered car charging stations.</p>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 mb-3">
+                    <h3 class="h5">About EcoTransit</h3>
+                    <p class="text-muted">EcoTransit aims to promote sustainable transport options to reduce carbon emissions and improve urban air quality. Learn more about our mission and initiatives.</p>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3 class="h5">Quick Links</h3>
+                    <ul class="list-unstyled text-muted">
+                        <li><a href="#" class="text-reset">Home</a></li>
+                        <li><a href="#" class="text-reset">Carbon Footprint Data</a></li>
+                        <li><a href="#" class="text-reset">Public Transport Benefits</a></li>
+                        <li><a href="#" class="text-reset">Electric Vehicles</a></li>
+                        <li><a href="#" class="text-reset">Sustainable Practices</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-4 mb-3">
+                    <h3 class="h5">Contact Us</h3>
+                    <p class="text-muted">Email: contact@ecotransit.com</p>
+                    <p class="text-muted">Phone: +123 456 7890</p>
+                </div>
+            </div>
+        </div>
+    </footer>    
 </body>
 </html>

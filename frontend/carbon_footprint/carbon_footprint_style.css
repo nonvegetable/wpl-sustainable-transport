@@ -1,0 +1,12 @@
+body { background-color: #f8f9fa; }
+.navbar { background-color: #ffffff; }
+.chart-placeholder {
+    background-color: #e9ecef;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    font-weight: bold;
+}
+.footer { background-color: #1a2c42; color: white; }
