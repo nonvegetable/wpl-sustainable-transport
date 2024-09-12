@@ -53,3 +53,10 @@ footer a {
 footer a:hover {
     text-decoration: underline;
 }
+
+.card {
+    transition: transform 0.3s;
+}
+.card:hover {
+    transform: translateY(-5px);
+}
