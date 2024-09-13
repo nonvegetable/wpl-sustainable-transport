@@ -140,11 +140,28 @@ body {
 }
 
 /* Footer styles */
-.page-footer {
-    background-color: #333;
+.ecotransit-footer {
+    background-color: #1a2c42 !important;
+}
+
+.ecotransit-footer h5 {
     color: #ffffff;
-    padding: 20px 0;
-    text-align: center;
+    font-weight: bold;
+    margin-bottom: 1rem;
+}
+
+.ecotransit-footer p,
+.ecotransit-footer address {
+    color: #cccccc;
+}
+
+.ecotransit-footer a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.ecotransit-footer a:hover {
+    text-decoration: underline;
 }
 
 /* Responsive design */

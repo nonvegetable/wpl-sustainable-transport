@@ -117,33 +117,27 @@ body {
 }
 
 /* Footer styles */
-.page-footer {
-    background-color: #1a2c42;
+.ecotransit-footer {
+    background-color: #1a2c42 !important;
+}
+
+.ecotransit-footer h5 {
     color: #ffffff;
-    padding: 20px 0;
+    font-weight: bold;
+    margin-bottom: 1rem;
 }
 
-.footer-info {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.ecotransit-footer p,
+.ecotransit-footer address {
+    color: #cccccc;
 }
 
-.copyright-text {
-    margin: 0;
-}
-
-.footer-links {
-    display: flex;
-}
-
-.footer-link {
+.ecotransit-footer a {
     color: #ffffff;
     text-decoration: none;
-    margin-left: 20px;
 }
 
-.footer-link:hover {
+.ecotransit-footer a:hover {
     text-decoration: underline;
 }
 
