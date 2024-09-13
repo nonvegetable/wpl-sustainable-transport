@@ -76,7 +76,7 @@
 
             <section class="quiz-section">
                 <h2 class="section-title">Test Your Knowledge on Electric Vehicles</h2>
-                <form class="quiz-form">
+                <form class="quiz-form" onsubmit="return validateQuizForm()">
                     <div class="quiz-question">
                         <p>1. What is the primary benefit of electric vehicles?</p>
                         <div class="answer-option">
@@ -92,7 +92,7 @@
                             <label for="q1a3">Enhanced driving experience</label>
                         </div>
                     </div>
-
+        
                     <div class="quiz-question">
                         <p>2. Which component of an electric vehicle typically requires less maintenance?</p>
                         <div class="answer-option">
@@ -108,7 +108,7 @@
                             <label for="q2a3">Engine</label>
                         </div>
                     </div>
-
+        
                     <button type="submit" class="submit-button">Submit Quiz</button>
                 </form>
             </section>
@@ -154,5 +154,7 @@
             </div>
         </div>
     </footer>
+
+    <script src="electric_vehicle_script.js"></script>
 </body>
 </html>

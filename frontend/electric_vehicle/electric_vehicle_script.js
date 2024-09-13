@@ -1,31 +1,31 @@
-document.addEventListener('DOMContentLoaded', function() {
-    const quizForm = document.getElementById('quiz-form');
-    
-    quizForm.addEventListener('submit', function(e) {
-        e.preventDefault();
-        
-        const answers = {
-            question1: document.querySelector('input[name="question1"]:checked'),
-            question2: document.querySelector('input[name="question2"]:checked')
-        };
-        
-        let score = 0;
-        let feedback = '';
-        
-        if (answers.question1 && answers.question1.value === 'lower_emissions') {
-            score++;
-            feedback += 'Question 1: Correct! Lower emissions is the primary benefit of electric vehicles.\n';
-        } else {
-            feedback += 'Question 1: Incorrect. The primary benefit of electric vehicles is lower emissions.\n';
+function validateQuizForm() {
+    let q1Answered = false;
+    let q2Answered = false;
+
+    // Check if question 1 is answered
+    let q1Options = document.getElementsByName("q1");
+    for (let i = 0; i < q1Options.length; i++) {
+        if (q1Options[i].checked) {
+            q1Answered = true;
+            break;
         }
-        
-        if (answers.question2 && answers.question2.value === 'engine') {
-            score++;
-            feedback += 'Question 2: Correct! The engine (or motor) in electric vehicles typically requires less maintenance.\n';
-        } else {
-            feedback += 'Question 2: Incorrect. The engine (or motor) in electric vehicles typically requires less maintenance.\n';
+    }
+
+    // Check if question 2 is answered
+    let q2Options = document.getElementsByName("q2");
+    for (let i = 0; i < q2Options.length; i++) {
+        if (q2Options[i].checked) {
+            q2Answered = true;
+            break;
         }
-        
-        alert(`Your score: ${score}/2\n\n${feedback}`);
-    });
-});
+    }
+
+    // If either question is unanswered, show an alert and prevent form submission
+    if (!q1Answered || !q2Answered) {
+        alert("Please answer all questions before submitting the quiz.");
+        return false;
+    }
+
+    // If all questions are answered, allow form submission
+    return true;
+}
