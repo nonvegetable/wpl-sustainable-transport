@@ -82,7 +82,6 @@ body {
 .slider-box {
     position: relative;
     height: 300px;
-    overflow: hidden;
     background-color: #e9ecef;
     border-radius: 8px;
 }
@@ -95,6 +94,8 @@ body {
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
+    border-radius: 8px;
+    object-fit: cover;
 }
 
 .slider-image.active {

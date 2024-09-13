@@ -1,4 +1,3 @@
-// Image slider functionality
 const sliderImages = document.querySelectorAll('.slider-image');
 let currentImageIndex = 0;
 
@@ -8,4 +7,4 @@ function showNextImage() {
     sliderImages[currentImageIndex].classList.add('active');
 }
 
-setInterval(showNextImage, 5000); // Change image every 5 seconds
+setInterval(showNextImage, 5000);
