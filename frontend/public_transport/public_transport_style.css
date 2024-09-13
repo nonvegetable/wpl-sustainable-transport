@@ -1,15 +1,200 @@
-body { background-color: #f8f9fa; }
-.navbar { background-color: #ffffff; }
-.benefit-card, .testimonial-card, .statistic-card {
-    height: 100%;
+/* General styles */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+}
+
+.content-wrapper {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Header styles */
+.page-header {
+    background-color: #ffffff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.website-logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.main-navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+}
+
+.nav-list {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-link {
+    color: #333;
+    text-decoration: none;
+    padding: 10px 15px;
+}
+
+.nav-link.active {
+    font-weight: bold;
+}
+
+/* Main content styles */
+.main-content {
+    padding: 40px 0;
+}
+
+.page-title {
+    font-size: 32px;
+    margin-bottom: 20px;
+}
+
+.page-description {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.section-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+/* Benefits section styles */
+.benefits-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.benefit-box {
+    flex: 1;
     background-color: #ffffff;
     border-radius: 10px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
 }
-.testimonial-img {
+
+.benefit-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.benefit-description {
+    margin-bottom: 15px;
+}
+
+.benefit-image {
+    width: 100%;
+    border-radius: 5px;
+}
+
+/* Testimonials section styles */
+.testimonials-section {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.testimonial-box {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.testimonial-image {
     width: 80px;
     height: 80px;
-    object-fit: cover;
     border-radius: 50%;
+    margin-bottom: 15px;
 }
-.footer { background-color: #1a2c42; color: white; }
+
+.testimonial-text {
+    font-style: italic;
+    margin-bottom: 10px;
+}
+
+.testimonial-author {
+    font-weight: bold;
+}
+
+/* Statistics section styles */
+.statistics-section {
+    display: flex;
+    justify-content: space-between;
+}
+
+.statistic-box {
+    flex: 1;
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 0 10px;
+}
+
+.statistic-image {
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+.statistic-text {
+    text-align: center;
+}
+
+/* Footer styles */
+.page-footer {
+    background-color: #1a2c42;
+    color: #ffffff;
+    padding: 40px 0;
+}
+
+.footer-columns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-column {
+    flex: 1;
+    margin-right: 30px;
+}
+
+.footer-title {
+    font-size: 18px;
+    margin-bottom: 15px;
+}
+
+.footer-links {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-link {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.copyright-text {
+    text-align: center;
+    margin-top: 20px;
+}
