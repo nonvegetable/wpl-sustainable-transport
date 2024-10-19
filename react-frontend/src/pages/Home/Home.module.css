@@ -1,0 +1,52 @@
+/* src/pages/Home/Home.module.css */
+.homePage {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  
+  .mainContent {
+    flex: 1;
+    padding: 2rem 0;
+  }
+  
+  .imageSlider {
+    /* Add styles for image slider */
+  }
+  
+  .twoColumnLayout {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+  }
+  
+  .ecoRouting,
+  .sustainableTransport {
+    flex: 1;
+    min-width: 300px;
+  }
+  
+  .infoCard {
+    background-color: #f8f9fa;
+    border-radius: 8px;
+    padding: 1rem;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cardImage {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+  }
+  
+  .imageGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+  
+  .gridImage {
+    width: 100%;
+    border-radius: 8px;
+  }
