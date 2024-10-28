@@ -1,0 +1,68 @@
+.header {
+    width: 100%;
+    background-color: #0071e3;
+    padding: 1rem 0;
+    color: white;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: auto;
+    padding: 0 1rem;
+}
+
+.navbarBrand {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white;
+    text-decoration: none;
+}
+
+.navbar-toggler {
+    display: none;
+}
+
+.navList {
+    display: flex;
+    gap: 1.5rem;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+}
+
+.navLink:hover {
+    color: #ffdd57;
+}
+
+/* Responsive for small screens */
+@media (max-width: 768px) {
+    .navbar-toggler {
+        display: block;
+        color: white;
+        border: none;
+        background: transparent;
+    }
+
+    .navList {
+        display: none;
+        flex-direction: column;
+        padding: 1rem;
+        background-color: #0071e3;
+    }
+
+    .collapse.show .navList {
+        display: flex;
+    }
+}

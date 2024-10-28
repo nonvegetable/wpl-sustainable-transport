@@ -5,7 +5,7 @@ import styles from './Header.module.css';
 
 const Header = () => {
   return (
-    <header className={styles.header}>
+    <Header>
       <div className="container">
         <Link to="/" className={styles.navbarBrand}>EcoTransit</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,7 +21,7 @@ const Header = () => {
           </ul>
         </nav>
       </div>
-    </header>
+    </Header>
   );
 };
 
