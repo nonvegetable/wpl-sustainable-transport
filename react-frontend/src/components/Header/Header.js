@@ -8,9 +8,9 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.navbarBrand}>EcoTransit</Link>
-        <button className={styles.navbarToggler} type="button">
+        {/* <button className={styles.navbarToggler} type="button">
           <span className="navbar-toggler-icon"></span>
-        </button>
+        </button> */}
         <nav className={styles.navList}>
           <ul>
             <li><Link to="/" className={styles.navLink}>Home</Link></li>

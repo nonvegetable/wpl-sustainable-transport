@@ -1,90 +1,39 @@
-/* General body styling */
-body {
-    user-select: none;
-    overflow-y: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background: hsl(142deg 45% 89%); /* Sky light green */
-    height: 100vh;
-}
-
-/* Form container for signup */
-.signup-container {
-    background: hsl(213deg 85% 97%); /* Lighter green */
-    padding: 2em;
-    display: flex;
-    flex-direction: column;
-    border-radius: 30px;
-    box-shadow: 0 0 2em hsl(231deg 62% 94%);
+.loginContainer, .signupContainer {
     max-width: 400px;
-    width: 100%;
-    margin: 100px auto;
+    margin: auto;
+    padding: 2rem;
+    background: #f7fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 0.5rem;
 }
 
-/* Logo styling */
-.signup-logo {
-    text-align: center;
-    font-size: 24px;
+.loginLogo, .signupLogo {
+    font-size: 1.5rem;
     font-weight: bold;
-    color: hsl(233deg 36% 38%);
-    margin-bottom: 20px;
+    color: #2f855a;
+    text-align: center;
+    margin-bottom: 1rem;
 }
 
-.signup-logo i {
-    color: #28a745;
+.formGroup {
+    margin-bottom: 1rem;
 }
 
-/* Form field styling */
-.form-group {
-    margin-bottom: 15px;
-}
-
-input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    margin-top: 5px;
-}
-
-/* Button styling */
 button {
     width: 100%;
-    padding: 10px;
-    background-color: hsl(233deg 36% 38%);
-    color: white;
+    background-color: #2f855a;
+    color: #ffffff;
     border: none;
-    border-radius: 4px;
+    padding: 0.75rem;
+    border-radius: 0.25rem;
     cursor: pointer;
-    font-weight: 600;
-    font-size: 1em;
-    transition: background-color 0.3s ease;
 }
 
 button:hover {
-    background-color: hsl(233deg 36% 32%);
+    background-color: #276749;
 }
 
-/* Centered text */
-h2 {
+.loginFooter, .signupFooter {
+    margin-top: 1rem;
     text-align: center;
-    color: hsl(233deg 36% 38%);
-    margin-bottom: 20px;
-}
-
-/* Footer text */
-.signup-footer {
-    display: flex;
-    justify-content: space-between;
-    font-size: 0.9em;
-    margin-top: 20px;
-}
-
-.signup-footer span {
-    cursor: pointer;
-}
-
-.signup-footer span:hover {
-    text-decoration: underline;
 }

@@ -21,7 +21,7 @@ const Login = () => {
         if (response.ok) {
             sessionStorage.setItem('loggedIn', true);  // Set user as logged in
             alert('Login successful!');
-            window.location.href = '../index/index.html';  // Redirect to home page
+            window.location.href = '';  // Redirect to home page
         } else {
             alert(data.error);
         }
