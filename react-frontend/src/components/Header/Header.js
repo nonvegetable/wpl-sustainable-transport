@@ -8,9 +8,7 @@ const Header = () => {
     <header className={styles.header}>
       <div className={styles.container}>
         <Link to="/" className={styles.navbarBrand}>EcoTransit</Link>
-        {/* <button className={styles.navbarToggler} type="button">
-          <span className="navbar-toggler-icon"></span>
-        </button> */}
+        
         <nav className={styles.navList}>
           <ul>
             <li><Link to="/" className={styles.navLink}>Home</Link></li>
@@ -18,6 +16,9 @@ const Header = () => {
             <li><Link to="/public-transport" className={styles.navLink}>Public Transport Benefits</Link></li>
             <li><Link to="/electric-vehicles" className={styles.navLink}>Electric Vehicles</Link></li>
             <li><Link to="/sustainable-practices" className={styles.navLink}>Sustainable Practices</Link></li>
+            <li><Link to="/forum" className={styles.navLink}>Forum</Link></li>          
+            <li><Link to="/login" className={styles.navLink}>Login</Link></li>
+            <li><Link to="/signup" className={styles.navLink}>Sign Up</Link></li>
           </ul>
         </nav>
       </div>

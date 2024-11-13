@@ -1,3 +1,4 @@
+// src/pages/Login/Login.js
 import React, { useState } from 'react';
 import styles from './Login.module.css';
 import { Link } from 'react-router-dom';
@@ -19,9 +20,9 @@ const Login = () => {
 
         const data = await response.json();
         if (response.ok) {
-            sessionStorage.setItem('loggedIn', true);  // Set user as logged in
+            sessionStorage.setItem('loggedIn', true);
             alert('Login successful!');
-            window.location.href = '';  // Redirect to home page
+            window.location.href = '/';
         } else {
             alert(data.error);
         }

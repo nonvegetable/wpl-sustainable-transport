@@ -1,3 +1,4 @@
+// src/pages/Signup/Signup.js
 import React, { useState } from 'react';
 import styles from './Signup.module.css';
 import { Link } from 'react-router-dom';
@@ -21,7 +22,7 @@ const Signup = () => {
         const data = await response.json();
         if (response.ok) {
             alert('Sign up successful! Please log in.');
-            window.location.href = '../login/login.html';  // Redirect to login page
+            window.location.href = '/login';
         } else {
             alert(data.error);
         }
